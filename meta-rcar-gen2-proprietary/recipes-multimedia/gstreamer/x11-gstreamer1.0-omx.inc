@@ -23,4 +23,7 @@ SRC_URI += " \
              file://0020-h264enc-add-omxh264enc.patch \
              file://0021-videodec-add-dmabuf-feature.patch \
              file://0022-omx-fix-two-serious-message-handling-bugs.patch \
-            "
+             file://0023-videodec-fix-issue-with-wrong-timestamp-ES-stream.patch \
+             file://0024-264dec-remove-not-supported-aligment-nal.patch \
+             file://0025-videoenc-Align-stride-due-to-limitation-of-encode-MC.patch \
+           "

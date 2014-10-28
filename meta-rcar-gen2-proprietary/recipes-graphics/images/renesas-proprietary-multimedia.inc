@@ -20,13 +20,17 @@ IMAGE_INSTALL_append = " media-ctl"
 # Add DTV packages to image
 IMAGE_INSTALL_append = '${@base_conditional( "DTV_ENABLE", "1", " scu-kernel-module ssp-kernel-module dtv dtv-dev dtv-staticdev", "", d )}'
 
-IMAGE_INSTALL_append = " gstreamer1.0-plugins-base-audioconvert \
+IMAGE_INSTALL_append = " gstreamer1.0-meta-base \
+						 gstreamer1.0-meta-audio \
+						 gstreamer1.0-meta-video \
+						 gstreamer1.0-plugins-base-audioconvert \
 						 gstreamer1.0-plugins-base-audioresample \
 						 gstreamer1.0-plugins-base-playback \
 						 gstreamer1.0-plugins-base-videoconvert \
 						 gstreamer1.0-plugins-base-typefindfunctions \
 						 gstreamer1.0-plugins-base-videoscale \
 						 gstreamer1.0-plugins-good-avi \
+						 gstreamer1.0-plugins-good-id3demux \
 						 gstreamer1.0-plugins-bad-mpegtsdemux \
 						 gstreamer1.0-plugins-bad-debugutilsbad \
 						 "
